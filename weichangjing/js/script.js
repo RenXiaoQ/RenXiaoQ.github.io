@@ -1,4 +1,3 @@
-
 var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     pagination: {
@@ -8,4 +7,5 @@ var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
     },
+
 });
