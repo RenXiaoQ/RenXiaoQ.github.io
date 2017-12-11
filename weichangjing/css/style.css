@@ -60,24 +60,28 @@ h1{
     width: 35px;
     top:128px;
     left: 50px;
+    animation-iteration-count: infinite;
 }
 
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top:85px;
     right: 37px;
+    animation-iteration-count: 3;
 }
 
 .s1 .header img:nth-of-type(3) {
     width: 55px;
     left: 35px;
     bottom: 185px;
+    animation-iteration-count: 2;
 }
 
 .s1 .header img:nth-of-type(4) {
     width: 46px;
     right: 44px;
     bottom: 210px;
+    animation-iteration-count: 2;
 }
 
 .s1 .header img:nth-of-type(5) {
@@ -85,6 +89,7 @@ h1{
     left: 50%;
     margin-left: -32%;
     top: 30%;
+    animation-iteration-count: 2;
 }
 /*首页文字部分*/
 .s1 .main{
@@ -160,14 +165,17 @@ h1{
     width: 80%;
     margin: 0 auto;
     padding:30px 27px;
-    -moz-opacity:0.3;
-    background: radial-gradient(#00e7f9 -24%, #00e7f9 100%);}
+    /*-moz-opacity:0.3;*/
+    /*background: radial-gradient(#00e7f9 -24%, #00e7f9 100%);*/
+    background: url("../img/12.png");
+    background-size: contain;
+}
 
 .s2 .main p{
     opacity: 1;
-    font-size: 15px;
+    font-size: 14px;
     margin: 0 27px;
-    line-height: 30px;
+    line-height: 172%;
     color: #00fbc3;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
