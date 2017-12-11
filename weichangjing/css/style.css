@@ -167,10 +167,13 @@ h1{
     padding:30px 27px;
     /*-moz-opacity:0.3;*/
     /*background: radial-gradient(#00e7f9 -24%, #00e7f9 100%);*/
-    background: url("../img/12.png");
-    background-size: contain;
 }
-
+.s2 .main img{
+    position: absolute;
+    width: 80%;
+    left: 45px;
+    top:140px;
+}
 .s2 .main p{
     opacity: 1;
     font-size: 14px;
@@ -178,4 +181,12 @@ h1{
     line-height: 172%;
     color: #00fbc3;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.s2 .footer span{
+    display: block;
+    width: 30%;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: -10px;
+    background-color: #00fbc3;
 }
