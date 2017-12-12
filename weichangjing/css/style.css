@@ -52,6 +52,23 @@ h1{
     height: 100%;
     background: url("../img/bj.png");
 }
+/*音乐*/
+
+#mp3btn{
+    position: absolute;
+    right: 5%;
+    top:5%;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+
+}
+#mp3btn img{
+    width: 15px;
+    height: 24px;
+    margin-top: 6px;
+}
 /*s1页*/
 .s1 .header img{
   position: absolute;
@@ -60,28 +77,24 @@ h1{
     width: 35px;
     top:128px;
     left: 50px;
-    animation-iteration-count: infinite;
 }
 
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top:85px;
     right: 37px;
-    animation-iteration-count: 3;
 }
 
 .s1 .header img:nth-of-type(3) {
     width: 55px;
     left: 35px;
     bottom: 185px;
-    animation-iteration-count: 2;
 }
 
 .s1 .header img:nth-of-type(4) {
     width: 46px;
     right: 44px;
     bottom: 210px;
-    animation-iteration-count: 2;
 }
 
 .s1 .header img:nth-of-type(5) {
@@ -89,7 +102,9 @@ h1{
     left: 50%;
     margin-left: -32%;
     top: 30%;
-    animation-iteration-count: 2;
+}
+.ani{
+    transform-origin:center;
 }
 /*首页文字部分*/
 .s1 .main{
