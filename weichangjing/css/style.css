@@ -115,8 +115,49 @@ h1{
     margin-left: -32%;
     top: 25%;
 }
+
+.s1 .header img:nth-of-type(6) {
+    width: 343px;
+    height: 390px;
+    left: 28px;
+    top: 110px;
+    transform:rotateZ(0deg);
+    animation:zhuanbtnkey 6s linear infinite;
+    opacity: 1;
+}
+@keyframes fagaungzhaun {
+    0%{
+        transform: rotateZ(0deg);
+        opacity: 0;
+    }
+    100%{
+        transform: rotateZ(360deg);
+        opacity: 1;
+    }
+}
 .ani{
     transform-origin:center;
+}
+
+
+/*anniu*/
+.swiper-button-next{
+    width: 17px;
+    height: 34px;
+    background-size: contain;
+    animation: buttonanniu 2.5s infinite;
+    opacity: 0;
+}
+@keyframes buttonanniu {
+    0%{
+        bottom: 2%;
+        opacity: 1;
+
+    }
+    100%{
+        bottom: 5%;
+        opacity: 0;
+    }
 }
 /*首页文字部分*/
 .s1 .main{
@@ -140,6 +181,7 @@ h1{
     background: url("../img/9.png");
     -moz-background-size:100% 100%;
     background-size:100% 100%;
+    font-weight: bold;
 }
 /*首页footer部分文字*/
 .s1 .footer{
@@ -187,51 +229,57 @@ h1{
 
 }
 #zhuan{
-    width: 110%;
-    height: 455.391px;
+    width: 450px;
+    height: 451px;
     position: absolute;
     top: 13%;
-    left: -5%;
+    left: -6.5%;
     border-radius:50%;
 }
 #zhuan div:nth-of-type(1){
-    width: 91%;
-    height: 418.953px;
+    width: 410px;
+    height: 411px;
     position: absolute;
     top: 4%;
     left: 4%;
     border-radius:50%;
 }
 #zhuan div:nth-of-type(2){
-    width: 85%;
-    height: 387.078px;
+    width: 370px;
+    height: 371px;
     position: absolute;
     top: 8%;
-    left: 7%;
+    left: 8%;
     border-radius:50%;
 }
 #zhuan div:nth-of-type(3){
-    width: 75%;
-    height: 341.531px;
+    width: 330px;
+    height: 331px;
     position: absolute;
-    top: 14%;
+    top: 12%;
     left: 12%;
     border-radius:50%;
 }
 /*s2-s7footer自定义样式*/
 
 /*s2自定义样式*/
-.s2{
+.s2,.s3{
     color: #00fbc3;
 }
-.s2 h2{
+.s2 h2 ,.s3 h2{
     padding-top: 10%;
     font-size: 24px;
-    margin-bottom: 10%;
+    margin-bottom: 6%;
 }
-
+.s2 small,.s3 small{
+    letter-spacing:5px;
+    display: block;
+    margin-bottom: 8%;
+}
 .s2 h2::before,
-.s2 h2::after{
+.s3 h2::before,
+.s2 h2::after,
+.s3 h2::after{
     content:"";
     width: 83px;
     height: 20px;
@@ -239,14 +287,16 @@ h1{
     position: absolute;
 }
 
-.s2 h2::before{
-    background: url("");
+.s2 h2::before,
+.s3 h2::before{
+    background: url("../img/14.png");
     background-size: cover;
     left: 45px;
     top: 45px;
 }
-.s2 h2::after{
-    background: url("");
+.s2 h2::after,
+.s3 h2::after{
+    background: url("../img/13.png");
     background-size: cover;
     right: 45px;
     top: 45px;
@@ -273,7 +323,7 @@ h1{
 }
 .s2 span{
     position: absolute;
-    bottom: 0;
+    bottom: -6px;
     left: 52%;
     width: 120px;
     height: 30px;
@@ -287,4 +337,54 @@ h1{
     line-height: 30px;
     border-radius: 20px;
     font-weight: bold;
+}
+.s2 .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+.s2 .footer img{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+}
+.s2 .footer img:nth-of-type(1){
+    left: 10px;
+}
+.s2 .footer img:nth-of-type(2){
+    left: -20px;
+}
+
+
+
+
+/*s3样式*/
+.s3 .main{
+
+}
+.s3 .main .main-img:nth-of-type(1){
+    position: relative;
+    left: -70px;
+}
+.s3 .main .main-img img{
+    width:18%;
+    left: 0;
+}
+.s3 .main .main-img .main-text{
+    position: absolute;
+    left: 25px;
+    right: 0;
+    top: 6px;
+    width: 24%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 17px;
+    font-weight: bold;
+}
+.s3 .main .main-img:nth-of-type(2){
+    position: relative;
+    right: -70px;
+    top: -80px;
 }
