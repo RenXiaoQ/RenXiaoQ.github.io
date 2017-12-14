@@ -263,15 +263,15 @@ h1{
 /*s2-s7footer自定义样式*/
 
 /*s2自定义样式*/
-.s2,.s3{
+.s2,.s3,.s4{
     color: #00fbc3;
 }
-.s2 h2 ,.s3 h2{
+.s2 h2 ,.s3 h2 ,.s4 h2{
     padding-top: 10%;
     font-size: 24px;
     margin-bottom: 6%;
 }
-.s2 small,.s3 small{
+.s2 small,.s3 small,.s4 small{
     letter-spacing:5px;
     display: block;
     margin-bottom: 8%;
@@ -279,7 +279,9 @@ h1{
 .s2 h2::before,
 .s3 h2::before,
 .s2 h2::after,
-.s3 h2::after{
+.s3 h2::after,
+.s4 h2::before,
+.s4 h2::after{
     content:"";
     width: 83px;
     height: 20px;
@@ -288,14 +290,16 @@ h1{
 }
 
 .s2 h2::before,
-.s3 h2::before{
+.s3 h2::before,
+.s4 h2::before{
     background: url("../img/14.png");
     background-size: cover;
     left: 45px;
     top: 45px;
 }
 .s2 h2::after,
-.s3 h2::after{
+.s3 h2::after,
+.s4 h2::after{
     background: url("../img/13.png");
     background-size: cover;
     right: 45px;
@@ -360,9 +364,6 @@ h1{
 
 
 /*s3样式*/
-.s3 .main{
-
-}
 .s3 .main .main-img:nth-of-type(1){
     position: relative;
     left: -70px;
@@ -371,6 +372,22 @@ h1{
     width:18%;
     left: 0;
 }
+.s3 .main .main-img:nth-of-type(4) img{
+    width:40%;
+    left: 0;
+}
+.s3 .main .main-img:nth-of-type(4) .main-text{
+    position: absolute;
+    left: 47px;
+    right: 0;
+    top: 40px;
+    width: 48%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 25px;
+}
+
 .s3 .main .main-img .main-text{
     position: absolute;
     left: 25px;
@@ -383,8 +400,184 @@ h1{
     font-size: 17px;
     font-weight: bold;
 }
-.s3 .main .main-img:nth-of-type(2){
+.s3 .main .main-img{
     position: relative;
+}
+.s3 .main .main-img:nth-of-type(2){
     right: -70px;
     top: -80px;
+}
+.s3 .main .main-img:nth-of-type(3){
+    left: -145px;
+    top: -25px;
+}
+.s3 .main .main-img:nth-of-type(4){
+    left: 0px;;
+    top:-145px;
+}
+.s3 .main .main-img:nth-of-type(5){
+    left: 145px;
+    top: -270px;
+}
+.s3 .main .main-img:nth-of-type(6){
+    left: -65px;
+    top: -207px;
+}
+.s3 .main .main-img:nth-of-type(7){
+    left: 75px;
+    top: -285px;
+ }
+.s3 .footer{
+    position: absolute;
+    width: 100%;
+    color: #09debe;
+    bottom:0px;
+}
+.s3 .footer span{
+    position: absolute;
+    display: block;
+    background: #09debe;
+    width: 1%;
+    height: 40px;
+    left: -260px;
+    right: 0;
+    top: -100px;
+    margin: auto;
+    text-align: left;
+}
+.s3 .footer p:nth-of-type(1){
+    position: absolute;
+    left: 0;
+    right:0;
+    top: -120px;
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 14px;
+}
+.s3 .footer p img,
+.s4 .footer p img{
+    position: absolute;
+}
+.s3 .footer p:nth-of-type(2),
+.s4 .footer p:nth-of-type(2){
+    height: 60px;
+}
+.s3 .footer p img:nth-of-type(1),
+.s4 .footer p img:nth-of-type(1){
+    width: 120%;
+    left:0%;
+}
+
+.s3 .footer p img:nth-of-type(2),
+.s4 .footer p img:nth-of-type(2){
+    width: 120%;
+    left: -10%;
+}
+
+
+
+/*s4的样式*/
+
+.s4 .main{
+    position: relative;
+}
+.s4 .main .main-beijing{
+    width: 80%;
+}
+.s4 .main .text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 14px
+}
+.s4 .main .text .text-0{
+    width: 100%;
+    height: 60px;
+}
+.s4 .main .text .text-0 ul li{
+    float: left;
+}
+.s4 .main .text .text-0 ul li span{
+    display: block;
+    float: left;
+    margin: 18px;
+}
+.s4 .main .text .text-0 ul li img{
+    display:block;
+    float: left;
+}
+.s4 .main .text .text-1,
+.s4 .main .text .text-2,
+.s4 .main .text .text-3{
+    height: 90px;
+}
+.s4 .main .text .text-1 img ,
+.s4 .main .text .text-2 img,
+.s4 .main .text .text-3 img{
+    display: block;
+    float: left;
+    margin: 5px;
+}
+.s4 .main .text .text-1 img:nth-of-type(1),
+.s4 .main .text .text-2 img:nth-of-type(1),
+.s4 .main .text .text-3 img:nth-of-type(1){
+    width: 6%;
+}
+.s4 .main .text .text-1 img:nth-of-type(2){
+    width: 75%;
+}
+.s4 .main .text .text-2 img:nth-of-type(2){
+    width: 68%;
+}
+.s4 .main .text .text-3 img:nth-of-type(2){
+    width: 60%;
+}
+.s4 .main .text .text-1 img:nth-of-type(3) {
+    width: 52%;
+}
+.s4 .main .text .text-2 img:nth-of-type(3){
+    width: 47%;
+}
+.s4 .main .text .text-3 img:nth-of-type(3){
+    width: 40%;
+}
+.s4 .main .text .text-1 span,
+.s4 .main .text .text-2 span,
+.s4 .main .text .text-3 span{
+    float: left;
+    display: block;
+}
+.s4 .main .text .text-1 span:nth-of-type(1),
+.s4 .main .text .text-2 span:nth-of-type(1),
+.s4 .main .text .text-3 span:nth-of-type(1){
+   font-size: 18px;
+}
+.s4 .main .text .text-1 span i,
+.s4 .main .text .text-2 span i,
+.s4 .main .text .text-3 span i{
+    color: #ffffff;
+}
+.s4 .main .text .text-4{
+    text-align: center;
+}
+.s4 .main .text .text-4 span{
+    font-size: 14px;
+    letter-spacing: -3px
+}
+.s4 .footer p{
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 40px;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 14px;
 }
